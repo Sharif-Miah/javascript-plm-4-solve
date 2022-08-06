@@ -1,5 +1,21 @@
 //  1. তোমাকে ফাংশনের ইনপুট হিসেবে সেলসিয়াস দিবে। তুমি ক্যালকুলেশন করে তাপমাত্রা ফারেনহাইট এ কনভার্ট করে সেটার আউটপুট রিটার্ন করবে  
 
+function fahrenHeit(calsius) {
+    let oneCalsiusEquels = 33.8
+    let tempeture = calsius * oneCalsiusEquels
+    if (tempeture >= 1200) {
+        return 'This Fahrenheit is ' + tempeture + ' Hot day.'
+    } else {
+        return 'This Fahrenheit is ' + tempeture + ' Cool day.'
+    }
+}
+const todayCalsius = 38;
+const yesterdayCalsius = 20;
+
+const todayFarhenHeit = fahrenHeit(todayCalsius)
+console.log(todayFarhenHeit);
+const yesterdayFarhenHeit = fahrenHeit(yesterdayCalsius);
+console.log(yesterdayFarhenHeit);
 
 
 // <!-- 2. একইভাবে উল্টা হিসাব করবে। যাতে তোমাকে ফারেনহাইট হিসেবে তাপমাত্রা দিলে সেটাকে সেলসিয়াস এ কনভার্ট করে আউটপুট দিবে।  -->
